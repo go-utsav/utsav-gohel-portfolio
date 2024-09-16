@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from www.amirmalaeb.com/project-wordpress-aws.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 16 Sep 2024 09:00:50 GMT -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WordPress on AWS - Utsav Gohel</title>
+    <link href="../fonts.googleapis.com/css22261.css?family=Open+Sans:wght@300;400;600;700&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <a href="index-2.html" class="logo">Professional Portfolio</a>
+                <div class="menu-container">
+                    <ul class="nav-links">
+                        <li><a href="index-2.html#about">About</a></li>
+                        <li><a href="index-2.html#skills">Skills</a></li>
+                        <li><a href="index-2.html#featured-projects">Featured Projects</a></li>
+                        <li><a href="projects.html">All Projects</a></li>
+                        <li><a href="index-2.html#education">Education</a></li>
+                        <li><a href="index-2.html#contact">Contact</a></li>
+                        <li><a href="aws-news.html" class="cta-button">AWS News</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="project-details">
+            <div class="container">
+                <h1>WordPress Website Hosted on AWS</h1>
+
+                <!-- Project Image Gallery -->
+                <div class="project-image-gallery">
+                    <img src="images/wordpressonaws.html" alt="WordPress on AWS Project" class="project-image">
+                </div>
+
+                <h2>Project Overview</h2>
+                <p>This project involved building a scalable, fault-tolerant WordPress website on AWS, leveraging key services such as EC2, VPC, Application Load Balancer, Elastic File System (EFS), and Amazon RDS. This setup ensures high availability, security, and the ability to handle increasing traffic efficiently.</p>
+
+                <h2>Technologies Used</h2>
+                <ul>
+                    <li>Custom VPC: Built with public and private subnets across two Availability Zones for high availability.</li>
+                    <li>EC2 Instances: Hosted in private subnets for enhanced security and managed through EC2 Instance Connect for SSH access.</li>
+                    <li>Application Load Balancer (ALB): Distributes incoming traffic to multiple instances, ensuring high availability.</li>
+                    <li>Elastic File System (EFS): Provides shared, scalable storage across EC2 instances.</li>
+                    <li>Amazon RDS: A managed MySQL database offering high availability and durability for WordPress.</li>
+                    <li>NAT Gateway: Ensures secure internet access for instances in private subnets.</li>
+                    <li>Route 53: Configured for DNS and domain management, integrating SSL/TLS via AWS Certificate Manager.</li>
+                    <li>AWS Certificate Manager: Provides SSL/TLS certificates for secure communication.</li>
+                    <li>Simple Notification Service (SNS): Set up for monitoring Auto Scaling Group activities in real-time.</li>
+                </ul>
+
+                <h2>Key Features</h2>
+                <ul>
+                    <li>Scalable Infrastructure: Automatically adjusts the number of EC2 instances using Auto Scaling Group.</li>
+                    <li>High Availability: Deployed across multiple Availability Zones with traffic distribution via an ALB.</li>
+                    <li>Secure Hosting: EC2 Instance Connect for SSH access and encrypted communications using SSL/TLS certificates.</li>
+                </ul>
+
+                <h2>Security Best Practices</h2>
+                <ul>
+                    <li>EC2 Instance Connect: Secure SSH access without public IPs, enhancing security.</li>
+                    <li>NAT Gateway: Ensured private instances can safely access the internet without direct exposure.</li>
+                    <li>Security Groups: Strictly controlled traffic between components for secure communication.</li>
+                </ul>
+
+                <h2>Lessons Learned</h2>
+                <p>This project helped me dive deeper into AWS services such as EC2, VPC, and ALB, and I gained a better understanding of how to secure a web hosting environment on AWS. Additionally, working with shared storage through EFS and a managed database with RDS enhanced my cloud management skills.</p>
+
+                <h2>Skills Demonstrated</h2>
+                <div class="tags">
+                    <span class="tag">AWS EC2</span>
+                    <span class="tag">Application Load Balancer</span>
+                    <span class="tag">NAT Gateway</span>
+                    <span class="tag">Amazon RDS</span>
+                    <span class="tag">Elastic File System</span>
+                    <span class="tag">VPC</span>
+                    <span class="tag">Route 53</span>
+                    <span class="tag">Security Best Practices</span>
+                </div>
+
+                <a href="projects.html" class="back-button">Back to Projects</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Utsav Gohel. All rights reserved.</p>
+            <div class="social-links">
+                <a href="https://in.linkedin.com/in/mr-utsav-gohel" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/go-utsav" target="_blank"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+<!-- Mirrored from www.amirmalaeb.com/project-wordpress-aws.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 16 Sep 2024 09:00:50 GMT -->
+</html>

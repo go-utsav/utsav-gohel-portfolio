@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from www.amirmalaeb.com/project-aws-deployment.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 16 Sep 2024 09:01:39 GMT -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Website Deployment and Hosting on AWS - Utsav Gohel</title>
+    <link href="../fonts.googleapis.com/css22261.css?family=Open+Sans:wght@300;400;600;700&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <!-- Your header content -->
+    </header>
+
+    <main>
+        <section class="project-details">
+            <div class="container">
+                <h1>Dynamic Website Deployment and Hosting on AWS</h1>
+                <div class="project-image-gallery">
+                    <img src="images/3TierArchitecture.jpg" alt="AWS Architecture Diagram" class="project-image">
+                </div>
+                
+                <h2>Project Details</h2>
+                <ul>
+                    <li>Virtual Private Cloud (VPC): Established a secure, isolated section of the AWS cloud for networking.</li>
+                    <li>Internet Gateway: Enabled seamless communication between instances and the internet.</li>
+                    <li>Security Groups: Configured robust virtual firewalls for controlling traffic to and from instances.</li>
+                    <li>Availability Zones: Enhanced reliability and fault tolerance by distributing resources across multiple zones.</li>
+                    <li>Public and Private Subnets: Strategically placed infrastructure components for security and performance optimization.</li>
+                    <li>NAT Gateway: Provided secure internet access for instances in private subnets.</li>
+                    <li>EC2 Instance Connect Endpoint: Facilitated secure connections to EC2 instances.</li>
+                    <li>Application Load Balancer: Distributed incoming application traffic across multiple instances for high availability and fault tolerance.</li>
+                    <li>Auto Scaling Group: Automated the management of EC2 instances to ensure optimal performance and cost-efficiency.</li>
+                    <li>AWS Certificate Manager: Managed SSL/TLS certificates for secure communications.</li>
+                    <li>Simple Notification Service (SNS): Enabled real-time notifications for activities within the Auto Scaling Group.</li>
+                    <li>Route 53: Provided reliable DNS services for domain management.</li>
+                    <li>S3 Bucket: Stored application code and assets securely.</li>
+                    <li>Amazon RDS: Utilized a scalable, high-availability database service for storing application data.</li>
+                </ul>
+                <h2>Technologies Used</h2>
+                <div class="tags">
+                    <span class="tag">AWS VPC</span>
+                    <span class="tag">Internet Gateway</span>
+                    <span class="tag">Security Groups</span>
+                    <span class="tag">Availability Zones</span>
+                    <span class="tag">Public Subnets</span>
+                    <span class="tag">Private Subnets</span>
+                    <span class="tag">NAT Gateway</span>
+                    <span class="tag">EC2</span>
+                    <span class="tag">Application Load Balancer</span>
+                    <span class="tag">Auto Scaling Group</span>
+                    <span class="tag">AWS Certificate Manager</span>
+                    <span class="tag">Amazon SNS</span>
+                    <span class="tag">Amazon Route 53</span>
+                    <span class="tag">Amazon S3</span>
+                    <span class="tag">Amazon RDS</span>
+                </div>
+                <a href="projects.html" class="back-button">Back to Projects</a>
+            </div>
+        </section>
+    </main>
+    <script>
+        function openLightbox(img) {
+            var lightbox = document.getElementById("lightbox");
+            var lightboxImg = document.getElementById("lightbox-img");
+            lightbox.style.display = "block";
+            lightboxImg.src = img.src;
+        }
+        
+        function closeLightbox() {
+            document.getElementById("lightbox").style.display = "none";
+        }
+        
+        // Close lightbox when clicking outside the image
+        window.onclick = function(event) {
+            var lightbox = document.getElementById("lightbox");
+            if (event.target == lightbox) {
+                lightbox.style.display = "none";
+            }
+        }
+        </script>
+
+        <footer>
+            <div class="container">
+                <p>&copy; 2024 Utsav Gohel. All rights reserved.</p>
+                <div class="social-links">
+                    <a href="https://in.linkedin.com/in/mr-utsav-gohel" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/go-utsav" target="_blank"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+        </footer>
+</body>
+
+<!-- Mirrored from www.amirmalaeb.com/project-aws-deployment.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 16 Sep 2024 09:01:39 GMT -->
+</html>

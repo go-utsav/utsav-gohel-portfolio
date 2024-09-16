@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from www.amirmalaeb.com/project-EKS-Kubernetes.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 16 Sep 2024 09:01:38 GMT -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kubernetes and Amazon EKS Project - Utsav Gohel</title>
+    <link href="../fonts.googleapis.com/css22261.css?family=Open+Sans:wght@300;400;600;700&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <a href="index-2.html" class="logo">Professional Portfolio</a>
+                <ul class="nav-links">
+                    <li><a href="index-2.html#about">About</a></li>
+                    <li><a href="index-2.html#skills">Skills</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="index-2.html#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="project-details">
+            <div class="container">
+                <h1>Kubernetes and Amazon EKS Project</h1>
+                <div class="project-image-gallery">
+                    <img src="images/EKS-project/EKS%20Cluster.jpg" alt="Kubernetes and Amazon EKS Project - Image 1" class="project-image">
+                    <img src="images/EKS-project/EKS1.png" alt="Kubernetes and Amazon EKS Project - Image 2" class="project-image">
+                    <img src="images/EKS-project/EKS2.png" alt="Kubernetes and Amazon EKS Project - Image 3" class="project-image">
+                    <img src="images/EKS-project/EKS3.png" alt="Kubernetes and Amazon EKS Project - Image 4" class="project-image">
+                    <img src="images/EKS-project/EKS4.png" alt="Kubernetes and Amazon EKS Project - Image 4" class="project-image">
+                </div>
+
+                <!-- Lightbox -->
+                <div id="lightbox" class="lightbox">
+                    <span class="close-lightbox" onclick="closeLightbox()">&times;</span>
+                    <img class="lightbox-content" id="lightbox-img">
+                </div>
+
+                <h2>Project Highlights</h2>
+                <ul>
+                    <li>Version Control: Used Git and GitHub for seamless collaboration.</li>
+                    <li>Containerization: Created Dockerfiles and containerized the application.</li>
+                    <li>AWS Setup: Configured AWS services including ECR, RDS, and Secret Manager.</li>
+                    <li>ECR Integration: Built and pushed Docker images to Amazon ECR.</li>
+                    <li>Data Management: Migrated application data to Amazon RDS.</li>
+                    <li>Kubernetes Tools: Managed clusters with kubectl, eksctl, and Helm.</li>
+                    <li>Security: Secured sensitive information with AWS Secrets Manager.</li>
+                    <li>Cluster Setup: Deployed and managed an EKS cluster.</li>
+                    <li>Deployment: Deployed applications using Kubernetes manifests.</li>
+                    <li>DNS Configuration: Set up DNS for seamless application access.</li>
+                    <li>VPC Setup: Created a VPC with subnets, NAT gateways, and route tables.</li>
+                    <li>Command Line Operations: Executed setup and deployment via terminal commands.</li>
+                    <li>EC2 Instance Connect Endpoint: Secured data migration, terminating the instance post-migration.</li>
+                </ul>
+
+                <h2>Understanding AWS EKS and Worker Nodes</h2>
+                <ul>
+                    <li>Control Plane: AWS EKS manages the Kubernetes control plane, including the API server and etcd database, ensuring high availability and scalability.</li>
+                    <li>Worker Nodes: EC2 instances registered with the EKS cluster run application workloads. Auto Scaling groups manage the number of worker nodes based on demand.</li>
+                    <li>Networking: Configured networking settings for secure and efficient communication between the control plane and worker nodes, and among the worker nodes themselves.</li>
+                    <li>Monitoring and Logging: Integrated CloudWatch for monitoring and logging the performance and health of the EKS cluster.</li>
+                </ul>
+
+                <h2>Key Learning Outcomes</h2>
+                <ul>
+                    <li>Integrated Docker and Kubernetes with AWS services.</li>
+                    <li>Practiced container orchestration and management.</li>
+                    <li>Enhanced skills in secure secret management and data migration.</li>
+                    <li>Deepened understanding of EKS, worker nodes, control planes, and networking.</li>
+                    <li>Adapted the LAMP (Linux, Apache, MySQL, PHP) stack to a cloud-native architecture.</li>
+                    <li>Designed and implemented a robust VPC from scratch.</li>
+                </ul>
+
+                <h2>Skills Demonstrated</h2>
+                <div class="tags">
+                    <span class="tag">Kubernetes</span>
+                    <span class="tag">Amazon EKS</span>
+                    <span class="tag">Docker</span>
+                    <span class="tag">AWS ECR</span>
+                    <span class="tag">Amazon RDS</span>
+                    <span class="tag">AWS Secrets Manager</span>
+                    <span class="tag">Helm</span>
+                    <span class="tag">VPC Setup</span>
+                    <span class="tag">CloudWatch</span>
+                    <span class="tag">Container Orchestration</span>
+                </div>
+
+                <a href="projects.html" class="back-button">Back to Projects</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Utsav Gohel. All rights reserved.</p>
+            <div class="social-links">
+                <a href="https://in.linkedin.com/in/mr-utsav-gohel" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/go-utsav" target="_blank"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </footer>
+    <script>
+        function openLightbox() {
+            document.getElementById('lightbox').style.display = 'block';
+        }
+        
+        function closeLightbox() {
+            document.getElementById('lightbox').style.display = 'none';
+        }
+
+        document.querySelectorAll('.project-image').forEach(image => {
+            image.addEventListener('click', () => {
+                document.getElementById('lightbox-img').src = image.src;
+                openLightbox();
+            });
+        });
+    </script>
+</body>
+
+<!-- Mirrored from www.amirmalaeb.com/project-EKS-Kubernetes.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 16 Sep 2024 09:01:38 GMT -->
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from www.amirmalaeb.com/project-currency-normalization.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 16 Sep 2024 09:00:53 GMT -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Normalization Project - Utsav Gohel</title>
+    <link href="../fonts.googleapis.com/css22261.css?family=Open+Sans:wght@300;400;600;700&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <a href="index-2.html" class="logo">Professional Portfolio</a>
+                <ul class="nav-links">
+                    <li><a href="index-2.html#about">About</a></li>
+                    <li><a href="index-2.html#skills">Skills</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="index-2.html#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="project-details">
+            <div class="container">
+                <h1>Currency Normalization Project</h1>
+                <div class="project-image-gallery">
+                    <img src="images/Screenshot%202024-07-18%20at%2012.45.57%c3%a2%c2%80%c2%afAM.html" alt="Currency Normalization Project - Image 1" class="project-image">
+                    <img src="images/Screenshot%202024-07-18%20at%2012.47.24%c3%a2%c2%80%c2%afAM.html" alt="Currency Normalization Project - Image 2" class="project-image">
+                    <img src="images/Screenshot%202024-07-18%20at%2012.59.47%c3%a2%c2%80%c2%afAM.html" alt="Currency Normalization Project - Image 3" class="project-image">
+                </div>
+
+                <!-- Lightbox -->
+                <div id="lightbox" class="lightbox">
+                    <span class="close-lightbox" onclick="closeLightbox()">&times;</span>
+                    <img class="lightbox-content" id="lightbox-img">
+                </div>
+
+
+                <h2>Objective</h2>
+                <p>Developed a system to normalize property sales data, converting prices from different currencies to USD and storing the results in DynamoDB, with processed CSV records saved in a secondary S3 bucket.</p>
+
+                <h2>Technologies Used</h2>
+                <ul>
+                    <li>AWS Lambda: For serverless data processing</li>
+                    <li>AWS S3: For storing raw and processed data</li>
+                    <li>AWS DynamoDB: For storing processed financial records</li>
+                    <li>AWS CDK: For infrastructure as code</li>
+                    <li>Matplotlib: For data visualization</li>
+                    <li>ExchangeRatesAPI: For real-time currency conversion</li>
+                </ul>
+
+                <h2>Key Features</h2>
+                <ul>
+                    <li>Automated Data Processing: Triggered by S3 events, the Lambda function processes CSV files, converts prices to USD, and stores the updated records in DynamoDB.</li>
+                    <li>Real-Time Currency Conversion: Utilized the ExchangeRatesAPI to fetch the latest exchange rates for accurate conversions.</li>
+                    <li>Data Visualization: Generated a plot of the top 10 most expensive houses, which is saved in the processed S3 bucket.</li>
+                    <li>Efficient Packaging: Packaged dependencies including numpy, matplotlib, and requests in a Lambda Layer for streamlined deployment.</li>
+                </ul>
+
+                <h2>Project Steps</h2>
+                <ul>
+                    <li>CDK Configuration: Set up S3 buckets, DynamoDB table, and Lambda functions using AWS CDK.</li>
+                    <li>Lambda Function: Wrote a function to read, process, and upload data, including real-time currency conversion and data visualization.</li>
+                    <li>Layer Creation: Packaged necessary libraries using Docker to ensure compatibility with AWS Lambda.</li>
+                    <li>Testing & Deployment: Deployed the solution, tested with sample CSV files, and validated the results in S3 and DynamoDB.</li>
+                </ul>
+
+                <h2>Impact</h2>
+                <p>This project not only enhanced my skills in AWS services and serverless architecture but also provided practical experience in automating data workflows and integrating third-party APIs.</p>
+
+                <h2>Skills Demonstrated</h2>
+                <div class="tags">
+                    <span class="tag">AWS Lambda</span>
+                    <span class="tag">Amazon SQS</span>
+                    <span class="tag">Amazon DynamoDB</span>
+                    <span class="tag">Amazon S3</span>
+                    <span class="tag">AWS CDK</span>
+                    <span class="tag">Python</span>
+                    <span class="tag">Data Processing</span>
+                    <span class="tag">Data Visualization</span>
+                    <span class="tag">API Integration</span>
+                    <span class="tag">Serverless Architecture</span>
+                </div>
+
+                <a href="projects.html" class="back-button">Back to Projects</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Utsav Gohel. All rights reserved.</p>
+            <div class="social-links">
+                <a href="https://in.linkedin.com/in/mr-utsav-gohel" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/go-utsav" target="_blank"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+<!-- Mirrored from www.amirmalaeb.com/project-currency-normalization.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 16 Sep 2024 09:00:55 GMT -->
+</html>

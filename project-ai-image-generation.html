@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from www.amirmalaeb.com/project-ai-image-generation.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 16 Sep 2024 09:01:40 GMT -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Image Generation Service - Utsav Gohel</title>
+    <link href="../fonts.googleapis.com/css22261.css?family=Open+Sans:wght@300;400;600;700&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <a href="index-2.html" class="logo">Professional Portfolio</a>
+                <div class="menu-container">
+                    <ul class="nav-links">
+                        <li><a href="index-2.html#about">About</a></li>
+                        <li><a href="index-2.html#skills">Skills</a></li>
+                        <li><a href="index-2.html#featured-projects">Featured Projects</a></li>
+                        <li><a href="projects.html">All Projects</a></li>
+                        <li><a href="index-2.html#education">Education</a></li>
+                        <li><a href="index-2.html#contact">Contact</a></li>
+                        <li><a href="aws-news.html" class="cta-button">AWS News</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="project-details">
+            <div class="container">
+                <h1>AI Image Generation Service using Amazon Bedrock & Stable Diffusion</h1>
+                <div class="project-image-gallery">
+                    <img src="images/ai-image-generation-with-docker.html" alt="AI Image Generation Project" class="project-image">
+                    <img src="images/AI-Image-Generation%20(1).html" alt="CI/CD Pipeline" class="project-image">
+                </div>
+
+                <div class="project-video">
+                    <video controls style="display: block; margin: 0 auto; max-width: 100%; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+                        <source src="videos/ai-image-genertion.html" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+
+
+                <h2>Project Overview</h2>
+                <p>This AI image generation service leverages Amazon Bedrock’s Stable Diffusion model to generate high-quality images based on user prompts, using a scalable cloud architecture built on AWS. The project covers infrastructure design, deployment, and an easy-to-use interface for users to input prompts and retrieve generated images.</p>
+
+                <h2>Technologies Used</h2>
+                <ul>
+                    <li>AWS ECS Fargate: For running containers in a scalable, serverless environment.</li>
+                    <li>API Gateway: To manage user requests and responses.</li>
+                    <li>AWS Lambda: To invoke the Stable Diffusion model and process user inputs.</li>
+                    <li>Amazon S3: To store the generated images and provide URLs for easy access.</li>
+                    <li>Amazon Bedrock: Leveraged Stable Diffusion for AI image generation.</li>
+                    <li>Route 53 & AWS Certificate Manager: To ensure secure and reliable access with HTTPS.</li>
+                    <li>Docker: For containerization, CI/CD pipelines, and deploying the web interface and backend.</li>
+                    <li>GitHub: For source control, managing Docker builds, and automating deployment processes.</li>
+                </ul>
+
+                <h2>Key Features</h2>
+                <ul>
+                    <li>User prompt interface: A simple web UI for users to input prompts and generate images.</li>
+                    <li>Backend processing with API Gateway, Lambda, and Bedrock’s Stable Diffusion model.</li>
+                    <li>Images stored in Amazon S3 and accessible via URLs.</li>
+                    <li>CI/CD pipeline using Docker, GitHub, and Elastic Container Registry (ECR).</li>
+                </ul>
+
+                <h2>Challenges & Solutions</h2>
+                <ul>
+                    <li>Ensuring high availability: Deployed a multi-AZ VPC architecture for fault tolerance and scalability.</li>
+                    <li>Cost optimization: Used ECS Fargate to scale containers without the need for managing EC2 instances.</li>
+                </ul>
+
+                <h2>Lessons Learned</h2>
+                <p>This project helped me understand the importance of integrating AI services with scalable cloud architectures. By using AWS services such as ECS Fargate and Bedrock, I was able to create an efficient and fault-tolerant AI-driven web application.</p>
+
+                <h2>Skills Demonstrated</h2>
+                <div class="tags">
+                    <span class="tag">Amazon Bedrock</span>
+                    <span class="tag">Stable Diffusion</span>
+                    <span class="tag">AWS Lambda</span>
+                    <span class="tag">ECS Fargate</span>
+                    <span class="tag">API Gateway</span>
+                    <span class="tag">S3</span>
+                    <span class="tag">Docker</span>
+                    <span class="tag">CI/CD</span>
+                </div>
+
+                <a href="projects.html" class="back-button">Back to Projects</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Utsav Gohel. All rights reserved.</p>
+            <div class="social-links">
+                <a href="https://in.linkedin.com/in/mr-utsav-gohel" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/go-utsav" target="_blank"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+<!-- Mirrored from www.amirmalaeb.com/project-ai-image-generation.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 16 Sep 2024 09:01:40 GMT -->
+</html>
